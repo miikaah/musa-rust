@@ -1,0 +1,18 @@
+[package]
+name = "musa-rust"
+version = "0.1.0"
+authors = ["Miika Henttonen <miika.henttonen@wunderdog.fi>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "musa_rust"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
+rodio = "0.8.1"
